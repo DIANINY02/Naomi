@@ -93,8 +93,8 @@ function isColliding(element1, element2) {
 // Move enemies randomly
 function moveEnemies() {
     enemies.forEach(enemy => {
-        const dx = (Math.random() - 0.5) * 4;
-        const dy = (Math.random() - 0.5) * 4;
+        const dx = (Math.random() - 0.5) * 100;
+        const dy = (Math.random() - 0.5) * 100;
         let newX = parseFloat(enemy.style.left) + dx;
         let newY = parseFloat(enemy.style.top) + dy;
 
